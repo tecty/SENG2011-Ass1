@@ -29,8 +29,13 @@ method Test()
     var f:array<int> := new int[][1,100,1,100,1,200];
     assert EOSorted(f);
     var g:array<int> := new int[][1,2,4,2,2,1,1];
-    // assert g[0],g[1],g[2],g[3],g[4],g[5],g[6]== 1,2,4,2,2,1,1;
-    // assert !EOSorted(g);
-    // var h: array<int> := new int[][1,2,3,4,1];
-    // assert !Sorted(h);
+    assert g[0] ==1;
+    assert g[1] ==2;
+    assert g[2] ==4;
+    assert g[3] ==2;
+    assert g[4] ==2;
+    assert g[5] ==1;
+    assert g[6] ==1;
+    assert !EOSorted(g);
+    var h: array<int> := new int[][1,2,3,4,1];
 }

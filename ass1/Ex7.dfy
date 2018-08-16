@@ -48,3 +48,7 @@ method Just1(a: array<int>, key: int) returns (b: bool)
     // check whether count is 1 and return 
     b:= count ==1;
 }
+
+method Test(){
+
+}
